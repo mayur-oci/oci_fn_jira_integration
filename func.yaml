@@ -4,4 +4,4 @@ version: 0.0.30
 runtime: java
 build_image: fnproject/fn-java-fdk-build:jdk11-1.0.109
 run_image: fnproject/fn-java-fdk:jre11-1.0.109
-cmd: com.oci.fn.example::handleRequest
+cmd: com.oci.fn.example.JiraFunction::handleRequest
