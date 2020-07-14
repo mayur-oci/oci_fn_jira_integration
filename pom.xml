@@ -7,8 +7,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <fdk.version>1.0.109</fdk.version>
     </properties>
-    <groupId>com.example.fn</groupId>
-    <artifactId>hello</artifactId>
+    <groupId>com.oci.fn.jira.integration</groupId>
+    <artifactId>ticket-creation</artifactId>
     <version>1.0.0</version>
 
     <repositories>

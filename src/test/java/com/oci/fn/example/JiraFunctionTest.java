@@ -5,19 +5,19 @@ import org.junit.*;
 
 import static org.junit.Assert.*;
 
-public class HelloFunctionTest {
+public class JiraFunctionTest {
 
     @Rule
     public final FnTestingRule testing = FnTestingRule.createDefault();
 
-    //@Test
-    public void shouldReturnGreeting() {
+    @Test
+    public void testJiraTicketCreate() {
         FnHttpEventBuilder fnHttpEventBuilder = new FnHttpEventBuilder();
 
 
         testing.givenEvent().withBody("{\n" +
                 "  \"dedupeKey\": \"6b56c5d1-7f64-414f-84a2-5427ccc62c48\",\n" +
-                "  \"title\": \"cpuLoadMoreThan60Percent\",\n" +
+                "  \"title\": \"cpuLoadMoreThan90Percent\",\n" +
                 "  \"type\": \"OK_TO_FIRING\",\n" +
                 "  \"severity\": \"CRITICAL\",\n" +
                 "  \"timestampEpochMillis\": 1594186380000,\n" +

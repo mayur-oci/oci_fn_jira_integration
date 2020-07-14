@@ -2,7 +2,7 @@ package com.oci.fn.example;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.oci.notification.CloudEvent;
+import com.oci.pojo.notification.CloudEvent;
 import com.oci.pojo.jira.Content;
 import com.oci.pojo.jira.Content_;
 import com.oci.pojo.jira.Description;

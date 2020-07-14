@@ -1,5 +1,5 @@
 
-package com.oci.notification;
+package com.oci.pojo.notification;
 
 import java.io.Serializable;
 import java.util.HashMap;
