@@ -10,7 +10,7 @@ public class JiraFunctionTest {
     @Rule
     public final FnTestingRule testing = FnTestingRule.createDefault();
 
-    @Test
+    //@Test
     public void testJiraTicketCreate() {
         FnHttpEventBuilder fnHttpEventBuilder = new FnHttpEventBuilder();
 
