@@ -141,6 +141,7 @@ public class JiraFunction {
         }
         else {
             try {
+                // for local dev/testing
                 provider = new ConfigFileAuthenticationDetailsProvider("~/.oci/config", "DEFAULT");
             }
             catch (IOException e) {

@@ -64,7 +64,6 @@
             <artifactId>oci-java-sdk-vault</artifactId>
             <version>1.15.3</version>
         </dependency>
-
         <dependency>
             <groupId>com.oracle.oci.sdk</groupId>
             <artifactId>oci-java-sdk-secrets</artifactId>
