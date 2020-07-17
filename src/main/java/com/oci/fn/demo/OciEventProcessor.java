@@ -150,9 +150,4 @@ public class OciEventProcessor {
 //      String decodedSecretString =  new String(decodedSecretByte);
     }
 
-    public static void main(String args[]) {
-
-
-    }
-
 }
