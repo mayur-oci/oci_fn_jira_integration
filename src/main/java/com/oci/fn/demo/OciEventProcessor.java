@@ -141,13 +141,11 @@ public class OciEventProcessor {
                 (Base64SecretBundleContentDetails) getSecretBundleResponse.
                         getSecretBundle().getSecretBundleContent();
         String base64EncodedSecretString = base64SecretBundleContentDetails.getContent();
-
-//        in case you need plain text of secret
-//        System.out.println("Content from secret is " + base64EncodedSecretString);
-//        byte[] decodedSecretByte = Base64.getDecoder().decode(base64EncodedSecretString);
-//        String decodedSecretString =  new String(decodedSecretByte);
-
         return base64EncodedSecretString;
+//      in case you need plain text of secret
+//      System.out.println("Content from secret is " + base64EncodedSecretString);
+//      byte[] decodedSecretByte = Base64.getDecoder().decode(base64EncodedSecretString);
+//      String decodedSecretString =  new String(decodedSecretByte);
     }
 
     public static void main(String args[]) {
