@@ -4,6 +4,7 @@ import com.fnproject.fn.testing.FnHttpEventBuilder;
 import com.fnproject.fn.testing.FnResult;
 import com.fnproject.fn.testing.FnTestingRule;
 import org.junit.Rule;
+import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
@@ -12,10 +13,9 @@ public class FunctionOciEventToJsonTickeTest {
     @Rule
     public final FnTestingRule testing = FnTestingRule.createDefault();
 
-    //@Test
+    @Test
     public void testJiraTicketCreate() {
         FnHttpEventBuilder fnHttpEventBuilder = new FnHttpEventBuilder();
-
 
         testing.givenEvent().withBody(getEventString()).enqueue();
 
@@ -23,7 +23,7 @@ public class FunctionOciEventToJsonTickeTest {
 
         FnResult result = testing.getOnlyResult();
         System.out.println("In Junit Test: Result from function call: " + result.getBodyAsString());
-        assertTrue(true);
+        assertTrue(result.isSuccess());
     }
 
     private String getEventString(){
