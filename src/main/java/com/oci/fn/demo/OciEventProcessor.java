@@ -116,6 +116,8 @@ public class OciEventProcessor {
         else {
             try {
                 // for local dev/testing
+                // the user profile you choose here must belong to a group with these Authorizations in a policy, unless the user is Admin
+                // 'allow group <group name> to use secret-family in compartment < of your secret>'
                 provider = new ConfigFileAuthenticationDetailsProvider("~/.oci/config", "nonAdmin");
             }
             catch (IOException e) {
