@@ -26,7 +26,7 @@ public class OciEventProcessor {
 
     public String handleRequest(CloudEvent cloudEvent) {
 
-        // Json body of Cloud event from Oracle Notifications in serialized into cloudEvent object
+        // Json body of Cloud event from Oracle Event Service in serialized into cloudEvent object by Fn SDK implicitly
         System.err.println("Inside Java jira function with input as " + cloudEvent.getEventType() + "  " + cloudEvent.getData().getResourceName());
 
         String response = jiraCreateTicket(cloudEvent);
