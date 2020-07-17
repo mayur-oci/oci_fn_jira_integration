@@ -1,10 +1,9 @@
-package com.oci.fn.example;
+package com.oci.fn.demo;
 
 import com.fnproject.fn.testing.FnHttpEventBuilder;
 import com.fnproject.fn.testing.FnResult;
 import com.fnproject.fn.testing.FnTestingRule;
 import org.junit.Rule;
-import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
@@ -20,7 +19,7 @@ public class FunctionOciEventToJsonTickeTest {
 
         testing.givenEvent().withBody(getEventString()).enqueue();
 
-        testing.thenRun(FunctionOciEventToJiraTicket.class, "handleRequest");
+        testing.thenRun(OciEventProcessor.class, "handleRequest");
 
         FnResult result = testing.getOnlyResult();
         System.out.println("In Junit Test: Result from function call: " + result.getBodyAsString());

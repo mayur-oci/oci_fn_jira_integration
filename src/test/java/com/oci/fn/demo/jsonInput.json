@@ -1,0 +1,35 @@
+{
+  cloudEventsVersion: "0.1",
+  eventId: "60600c06-d6a7-4e85-b56a-1de3e6042f57",
+  eventType: "com.oraclecloud.databaseservice.autonomous.container.database.maintenance.reminder",
+  source: "databaseservice",
+  eventTypeVersion: "1.0",
+  eventTime: "2019-06-27T21:16:04.000Z",
+  contentType: "application/json",
+  extensions: {
+    compartmentId: "ocid1.compartment.oc1.......unique_id"
+  },
+  data: {
+    compartmentId: "ocid1.compartment.oc1.......unique_id",
+    compartmentName: "example_name",
+    resourceName: "my_container_database",
+    resourceId: "AutonomousPodBackup-.....unique_id",
+    availabilityDomain: "all",
+    freeFormTags: {
+      Department: "Finance"
+    },
+    definedTags: {
+      Operations: {
+        CostCenter: "42"
+      }
+    },
+    additionalDetails: {
+      lifecycleState: "ACTIVE",
+      timeCreated: "2019-06-27T21:15:59.000Z",
+      timeUpdated: "2019-06-27T21:16:04.389Z",
+      dbUniqueName: "dwrrdtsr_phx289",
+      dbHomeId: "ocid1.autonomouspodhome.oc1.phx......unique_id",
+      dbName: "dwrrdtsr"
+    }
+  }
+}

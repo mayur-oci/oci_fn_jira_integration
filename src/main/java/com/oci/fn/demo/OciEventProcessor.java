@@ -1,10 +1,10 @@
-package com.oci.fn.example;
+package com.oci.fn.demo;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 
-import com.oci.pojo.jira.*;
+import com.jira.cloud.pojo.*;
 import com.oci.services.events.pojo.CloudEvent;
 import com.oracle.bmc.Region;
 import com.oracle.bmc.auth.BasicAuthenticationDetailsProvider;
@@ -20,7 +20,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 
-public class FunctionOciEventToJiraTicket {
+public class OciEventProcessor {
     ObjectMapper objectMapper = new ObjectMapper();
     private SecretsClient secretsClient = getSecretClient();
 

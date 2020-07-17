@@ -1,5 +1,5 @@
 
-package com.oci.pojo.jira;
+package com.jira.cloud.pojo;
 
 import java.io.Serializable;
 import java.util.List;
