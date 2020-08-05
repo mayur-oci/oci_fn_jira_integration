@@ -6,8 +6,7 @@ POJOs for OCI CloudEvent in the package com.oci.services.events.pojo
 
 ## Code Details
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
+Now let us dive into the code in top-down fashion starting with the function handler. The function handler is the method that gets invoked on function invocation. It is as shown below.
 ```Java
 
 public String handleRequest(CloudEvent cloudEvent) {
